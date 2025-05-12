@@ -174,8 +174,8 @@ elif selected_page == "Contact":
     st.write("""
 **Developer:** Hareni M  
 📧 Email: harenimurugadass@gmail.com  
-🔗 LinkedIn: [linkedin.com/in/your-profile](https://www.linkedin.com/in/hareni-m-15436721a )  
-💻 GitHub: [github.com/yourprofile](https://github.com/harenimurugadass/Fake-News-Detection-Project)
+🔗 LinkedIn: [linkedin.com](https://www.linkedin.com/in/hareni-m-15436721a )  
+💻 GitHub: [github.com](https://github.com/harenimurugadass/Fake-News-Detection-Project)
 """)
 
 # --- Footer ---
