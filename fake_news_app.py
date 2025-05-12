@@ -1,14 +1,22 @@
 import streamlit as st
 import joblib
-import nltk
 import re
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 from streamlit_option_menu import option_menu
+import nltk
+import os
+
+# For Streamlit deployment, ensure 'punkt' is available
+try:
+    nltk.data.find("tokenizers/punkt")
+except LookupError:
+    nltk.download("punkt")
+
+from nltk.tokenize import word_tokenize
 
 # --- Download required NLTK resources ---
 nltk.download('stopwords')
-nltk.download('punkt')
 nltk.download('wordnet')
 
 # --- Load the trained pipeline model ---
@@ -19,10 +27,10 @@ stop_words = set(stopwords.words('english'))
 lemmatizer = WordNetLemmatizer()
 
 def preprocess_text(text):
+    tokens = word_tokenize(text)
     text = text.lower()
     text = re.sub(r"http\S+|www\S+|https\S+", '', text)
     text = re.sub(r"[^a-zA-Z0-9\s]", '', text)
-    tokens = nltk.word_tokenize(text)
     clean_text = [lemmatizer.lemmatize(word) for word in tokens if word.lower() not in stop_words]
     return ' '.join(clean_text)
 
