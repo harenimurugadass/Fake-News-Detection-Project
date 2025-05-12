@@ -166,8 +166,8 @@ elif selected_page == "Contact":
     st.write("""
 **Developer:** Hareni M  
 📧 Email: harenimurugadass@gmail.com  
-🔗 LinkedIn: [linkedin.com/in/your-profile](https://www.linkedin.com/in/your-profile)  
-💻 GitHub: [github.com/yourprofile](https://github.com/yourprofile)
+🔗 LinkedIn: [linkedin.com/in/your-profile](https://www.linkedin.com/in/hareni-m-15436721a )  
+💻 GitHub: [github.com/yourprofile](https://github.com/harenimurugadass/Fake-News-Detection-Project)
 """)
 
 # --- Footer ---
@@ -181,7 +181,7 @@ st.markdown("""
         © 2025 <b>Fake News Detection App</b> 
     </p>
     <p style="font-size: 14px; color: #aaa;">
-        Developed by <a href="https://your-portfolio-link.com" style="color: #7b2cbf; text-decoration: none;" target="_blank">Hareni</a>
+        Developed by <a href="https://github.com/harenimurugadass/Fake-News-Detection-Project" style="color: #7b2cbf; text-decoration: none;" target="_blank">Hareni</a>
     </p>
 </div>
 """, unsafe_allow_html=True)
