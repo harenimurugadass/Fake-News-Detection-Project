@@ -3,6 +3,12 @@ import streamlit as st
 import joblib
 import re
 from streamlit_option_menu import option_menu
+import os
+import nltk 
+
+from nltk.tokenize import word_tokenize
+from nltk.corpus import stopwords
+from nltk.stem import WordNetLemmatizer
 
 # --- Set NLTK data path (for local use or deployment) ---
 nltk_data_path = os.path.join(os.path.dirname(__file__), "nltk")
