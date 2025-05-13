@@ -8,7 +8,7 @@ import nltk
 import os
 
 # Point NLTK to your local 'nltk_data' folder
-nltk_data_path = os.path.join(os.path.dirname(__file__), "nltk_data")
+nltk_data_path = os.path.join(os.path.dirname(__file__), "nltk")
 nltk.data.path.append(nltk_data_path)
 
 from nltk.tokenize import word_tokenize
