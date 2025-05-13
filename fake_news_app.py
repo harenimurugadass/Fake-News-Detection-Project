@@ -1,22 +1,12 @@
 import os
-import nltk
 import streamlit as st
 import joblib
 import re
-from nltk.corpus import stopwords
-from nltk.stem import WordNetLemmatizer
-from nltk.tokenize import word_tokenize
 from streamlit_option_menu import option_menu
 
 # --- Set NLTK data path (for local use or deployment) ---
 nltk_data_path = os.path.join(os.path.dirname(__file__), "nltk")
 nltk.data.path.append(nltk_data_path)
-
-# --- Optional: Auto download if running locally or on Streamlit Cloud ---
-nltk.download('punkt')
-nltk.download('stopwords')
-nltk.download('wordnet')
-nltk.download('omw-1.4')
 
 # --- Load the trained pipeline model ---
 pipeline = joblib.load('fake_news_pipeline.pkl')
