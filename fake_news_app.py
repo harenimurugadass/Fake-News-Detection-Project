@@ -7,17 +7,15 @@ from streamlit_option_menu import option_menu
 import nltk
 import os
 
-# For Streamlit deployment, ensure 'punkt' is available
-try:
-    nltk.data.find("tokenizers/punkt")
-except LookupError:
-    nltk.download("punkt")
+# Tell NLTK to look inside the local nltk_data folder
+nltk.data.path.append(os.path.join(os.path.dirname(__file__), 'nltk_data'))
 
 from nltk.tokenize import word_tokenize
 
 # --- Download required NLTK resources ---
-nltk.download('stopwords')
-nltk.download('wordnet')
+# nltk.download('stopwords')
+# nltk.download('punkt')
+# nltk.download('wordnet')
 
 # --- Load the trained pipeline model ---
 pipeline = joblib.load('fake_news_pipeline.pkl')
