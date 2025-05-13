@@ -7,8 +7,9 @@ from streamlit_option_menu import option_menu
 import nltk
 import os
 
-# Tell NLTK to look inside the local nltk_data folder
-nltk.data.path.append(os.path.join(os.path.dirname(__file__), 'nltk_data'))
+# Point NLTK to your local 'nltk_data' folder
+nltk_data_path = os.path.join(os.path.dirname(__file__), "nltk_data")
+nltk.data.path.append(nltk_data_path)
 
 from nltk.tokenize import word_tokenize
 
