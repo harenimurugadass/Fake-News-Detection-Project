@@ -5,6 +5,6 @@ pandas
 numpy
 matplotlib
 seaborn
-nltk
+nltk==3.7
 joblib
 streamlit-option-menu
