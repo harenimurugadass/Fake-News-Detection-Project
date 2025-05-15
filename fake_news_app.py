@@ -167,10 +167,10 @@ This application is designed to detect whether a news article is REAL or FAKE us
 elif selected_page == "Contact":
     st.title("📨 Contact")
     st.write("""
-**Developer:** Hareni M  
-📧 Email: harenimurugadass@gmail.com  
-🔗 LinkedIn: [linkedin.com](https://www.linkedin.com/in/hareni-m-15436721a )  
-💻 GitHub: [github.com](https://github.com/harenimurugadass/Fake-News-Detection-Project)
+**Developer:** Hareni M 
+- 🔗 [LinkedIn](https://www.linkedin.com/in/hareni-m-15436721a)
+- 📧 harenimurugadass@gmail.com
+- 💻 [GitHub Project Link](https://github.com/harenimurugadass/Fake-News-Detection-Project)
 """)
 
 # --- Footer ---
